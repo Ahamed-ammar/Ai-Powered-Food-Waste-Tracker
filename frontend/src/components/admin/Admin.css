@@ -1,0 +1,149 @@
+.admin-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.admin-header h2 {
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.admin-header p {
+  color: #6b7280;
+}
+
+.user-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-admin {
+  background: #8b5cf6;
+  color: white;
+}
+
+.badge-owner {
+  background: #10b981;
+  color: white;
+}
+
+.badge-waiter {
+  background: #3b82f6;
+  color: white;
+}
+
+.badge-mess-incharge {
+  background: #f59e0b;
+  color: white;
+}
+
+.badge-restaurant {
+  background: #ec4899;
+  color: white;
+}
+
+.badge-hostel {
+  background: #06b6d4;
+  color: white;
+}
+
+.badge-active {
+  background: #10b981;
+  color: white;
+}
+
+.badge-completed {
+  background: #6b7280;
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stat-value {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.export-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.export-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.export-card h4 {
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.export-card p {
+  color: #6b7280;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.export-buttons .btn {
+  flex: 1;
+}

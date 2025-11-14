@@ -1,0 +1,16 @@
+.prediction-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.prediction-details p {
+  padding: 12px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.prediction-details strong {
+  color: #10b981;
+}
