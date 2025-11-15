@@ -3,12 +3,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.splash-screen::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
 }
 
 .splash-content {
   text-align: center;
-  color: white;
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
 }
 
 .logo-container {
@@ -16,21 +34,27 @@
 }
 
 .logo-icon {
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 96px;
+  margin-bottom: 24px;
   animation: bounce 1s infinite;
+  filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.6));
 }
 
 .app-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 8px;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .team-name {
-  font-size: 20px;
-  opacity: 0.9;
-  margin-bottom: 40px;
+  font-size: 22px;
+  opacity: 0.95;
+  margin-bottom: 48px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .loading-spinner {

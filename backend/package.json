@@ -8,7 +8,8 @@
     "dev": "nodemon server.js",
     "seed-admin": "node seed-admin.js",
     "test-db": "node test-connection.js",
-    "view-users": "node view-users.js"
+    "view-users": "node view-users.js",
+    "diagnose": "node diagnose.js"
   },
   "keywords": ["food-waste", "ai", "sustainability"],
   "author": "Rajadurai R <kit27.csbs45@gmail.com>",

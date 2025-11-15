@@ -51,43 +51,51 @@
 }
 
 .badge-admin {
-  background: #8b5cf6;
-  color: white;
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
 }
 
 .badge-owner {
-  background: #10b981;
-  color: white;
+  background: var(--gradient-accent);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
 }
 
 .badge-waiter {
-  background: #3b82f6;
-  color: white;
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
 .badge-mess-incharge {
-  background: #f59e0b;
-  color: white;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
 }
 
 .badge-restaurant {
-  background: #ec4899;
-  color: white;
+  background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.3);
 }
 
 .badge-hostel {
-  background: #06b6d4;
-  color: white;
+  background: var(--color-accent-cyan);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
 }
 
 .badge-active {
-  background: #10b981;
-  color: white;
+  background: var(--color-success);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
 }
 
 .badge-completed {
-  background: #6b7280;
-  color: white;
+  background: var(--color-gray-600);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(107, 114, 128, 0.3);
 }
 
 .stats-grid {
@@ -115,27 +123,39 @@
 }
 
 .export-card {
-  background: white;
-  border-radius: 12px;
-  padding: 24px;
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 32px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--color-gray-200);
+  transition: all 0.3s ease;
+}
+
+.export-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-accent-cyan);
 }
 
 .export-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 56px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .export-card h4 {
-  color: #1f2937;
-  margin-bottom: 8px;
+  color: var(--color-gray-900);
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .export-card p {
-  color: #6b7280;
-  margin-bottom: 16px;
+  color: var(--color-gray-600);
+  margin-bottom: 20px;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .export-buttons {

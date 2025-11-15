@@ -1,21 +1,26 @@
 .home-container {
-  padding: 40px 20px;
+  padding: 48px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .welcome-section {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .welcome-section h2 {
-  font-size: 36px;
-  color: #1f2937;
-  margin-bottom: 12px;
+  font-size: 42px;
+  color: var(--color-gray-900);
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .welcome-section p {
-  color: #6b7280;
-  font-size: 18px;
+  color: var(--color-gray-600);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .module-grid {
@@ -26,49 +31,85 @@
 }
 
 .module-card {
-  background: white;
-  border-radius: 16px;
-  padding: 40px;
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 44px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid var(--color-gray-200);
+  position: relative;
+  overflow: hidden;
+}
+
+.module-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-accent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .module-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--color-accent-cyan);
+}
+
+.module-card:hover::before {
+  opacity: 0.05;
 }
 
 .admin-card {
-  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-  color: white;
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+.admin-card::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  opacity: 1;
 }
 
 .admin-card h3,
 .admin-card p {
-  color: white;
+  color: var(--color-white);
 }
 
 .admin-card:hover {
-  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .module-icon {
-  font-size: 64px;
-  margin-bottom: 20px;
+  font-size: 72px;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  position: relative;
+  z-index: 1;
 }
 
 .module-card h3 {
-  color: #1f2937;
-  margin-bottom: 12px;
-  font-size: 24px;
+  color: var(--color-gray-900);
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
 }
 
 .module-card p {
-  color: #6b7280;
-  margin-bottom: 24px;
-  line-height: 1.6;
+  color: var(--color-gray-600);
+  margin-bottom: 28px;
+  line-height: 1.7;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .info-section {
@@ -79,30 +120,44 @@
 }
 
 .info-card {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  color: white;
-  padding: 24px;
-  border-radius: 12px;
+  background: var(--gradient-accent);
+  color: var(--color-white);
+  padding: 28px;
+  border-radius: 16px;
   text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
 }
 
 .info-card h4 {
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 700;
 }
 
 .info-card p {
-  opacity: 0.9;
+  opacity: 0.95;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .home-footer {
   text-align: center;
-  padding: 24px;
-  color: #6b7280;
-  border-top: 1px solid #e5e7eb;
+  padding: 32px;
+  color: var(--color-gray-600);
+  border-top: 2px solid var(--color-gray-200);
+  margin-top: 48px;
+  background: var(--color-gray-50);
+  border-radius: 16px;
 }
 
 .home-footer p {
-  margin: 4px 0;
+  margin: 6px 0;
+  font-weight: 500;
 }
